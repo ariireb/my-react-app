@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
+export default function App() {
   const [count, setCount] = useState(0)
 
   return (
@@ -32,4 +32,9 @@ function App() {
   )
 }
 
-export default App
+export function Square() {
+  return <button className="square">X</button>;
+}
+
+// export statement at end of code can only export single object
+// better to add as prefix to component
