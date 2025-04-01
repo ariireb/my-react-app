@@ -13,8 +13,8 @@ export function App() {
   )
 }
 
-function Square() {
-  return <button className="square">1</button>;
+function Square({ value }) {
+  return <button className="square">value</button>;
 }
 
 export default function Board() {
